@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en" class="brandsans_dce02d96-module__tEBbKW__variable brandserif_e7e46c4-module__uImRTq__variable brandmono_fae19af3-module__c5XAsG__variable copernicus_4da799c5-module__dijTSq__variable styrenea_f8492ab1-module__HimLXW__variable styreneb_278af5c6-module__wkOAdG__variable tiempostext_4eff4b4c-module__mpviCW__variable jetbrainsmono_7d7bdbc6-module__j_XgJq__variable">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/vendor/brand-core/css/365eca5272a6c334.css" data-precedence="next">
+  <link rel="stylesheet" href="assets/vendor/brand-core/css/ae6fb50648020e93.css" data-precedence="next">
+  <link rel="stylesheet" href="assets/vendor/brand-core/css/c5d84a2fc35fd9b3.css" data-precedence="next">
+  <link rel="stylesheet" href="assets/vendor/brand-core/css/b76609ecf4a245ca.css" data-precedence="next">
+  <link rel="stylesheet" href="assets/vendor/brand-core/css/2d4d9e07755f41f9.css" data-precedence="next">
+  <meta name="theme-color" content="#141413">
+  <title>Services | Catalyst Web Systems</title>
+  <meta name="description" content="Catalyst Web Systems builds websites, lead automations, and operational systems for small and mid-size US businesses — so every lead is captured, followed up, and converted into revenue.">
+  <meta property="og:title" content="Services | Catalyst Web Systems">
+  <meta property="og:description" content="Catalyst Web Systems builds websites, lead automations, and operational systems for small and mid-size US businesses — so every lead is captured, followed up, and converted into revenue.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://catalystwebsystems.com/services.html">
+  <meta property="og:image" content="https://catalystwebsystems.com/assets/images/open-graph.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@CatalystWebSys">
+  <meta name="twitter:creator" content="@CatalystWebSys">
+  <meta name="twitter:title" content="Services | Catalyst Web Systems">
+  <meta name="twitter:description" content="Catalyst Web Systems builds websites, lead automations, and operational systems for small and mid-size US businesses — so every lead is captured, followed up, and converted into revenue.">
+  <meta name="twitter:image" content="https://catalystwebsystems.com/assets/images/open-graph.jpg">
+  <meta name="robots" content="index,follow">
+  <link href="favicon.svg" rel="icon" type="image/svg+xml">
+  <link href="apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="canonical" href="https://catalystwebsystems.com/services.html">
+  <link rel="stylesheet" href="citadel-font-system.css"/>
+  <script src="nav-loader.js" defer></script>
+  <style>
+    /* Apply citadel-font-system.css rules with !important to override vendor CSS */
+
+    html { -webkit-font-smoothing: antialiased !important; text-rendering: optimizeLegibility; }
+
+    body {
+      font-family: "Manrope", system-ui, -apple-system, sans-serif !important;
+      font-size: 17px !important;
+      line-height: 1.6 !important;
+      letter-spacing: 0 !important;
+      font-weight: 400 !important;
+    }
+
+    h1, h2, h3, h4, h5, h6,
+    .headline-1, .headline-2, .headline-3, .headline-4, .headline-5, .headline-6 {
+      font-family: "Alliance No.2", "Alliance No.1", system-ui, -apple-system, sans-serif !important;
+      font-weight: 700 !important;
+      letter-spacing: -0.05em !important;
+      text-transform: none !important;
+    }
+
+    p, label, li, a, span, input, textarea, select, button,
+    .body-1, .body-2, .body-3, .body-4, .body-5, .serif {
+      font-family: "Manrope", system-ui, -apple-system, sans-serif !important;
+    }
+
+    .caption, .eyebrow, .section-label, .u-font-display-sans {
+      font-family: "Space Mono", ui-monospace, monospace !important;
+      letter-spacing: 0.12em !important;
+      text-transform: uppercase !important;
+    }
+
+    /* ========================================
+       WHO WE SERVE — SCROLL-PINNED STACKING CARDS
+       ======================================== */
+
+    /* Outer section: tall enough to hold the scroll animation budget.
+       100vh (the pinned view) + 1400px (700px per card transition). */
+    .wws-section-outer {
+      position: relative;
+      /* height set via inline style in HTML so it can reference 100vh cleanly */
+    }
+
+    /* Sticky frame: stays locked in the viewport while user scrolls through budget */
+    .wws-pinned {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    /* Inner two-column layout */
+    .wws-pinned-inner {
+      display: flex;
+      align-items: flex-start;
+      gap: 4rem;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    /* Left: section header */
+    .wws-header-col {
+      width: 280px;
+      flex-shrink: 0;
+    }
+    .wws-header-col .caption {
+      display: block;
+      margin-bottom: 1rem;
+      color: #666;
+    }
+    .wws-header-col h2 {
+      margin: 0;
+    }
+
+    /* Right: card stack */
+    .wws-cards-area {
+      flex: 1;
+      min-width: 0;
+      position: relative;
+      height: 580px;
+    }
+
+    /* Cards sit absolutely on top of each other */
+    .wws-card {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 2.75rem 3rem;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      height: 580px;
+      box-sizing: border-box;
+      transform-origin: top center;
+      will-change: transform;
+      overflow: hidden;
+      backface-visibility: hidden;
+    }
+
+    .wws-card:nth-child(1) {
+      z-index: 1;
+      background: #EDE9E2;
+      border: 1px solid rgba(0,0,0,0.07);
+      box-shadow: 0 4px 32px rgba(0,0,0,0.06);
+    }
+    .wws-card:nth-child(2) {
+      z-index: 2;
+      background: #1E1C1A;
+      color: #F5F1EB;
+      border: 1px solid rgba(255,255,255,0.07);
+      box-shadow: 0 8px 40px rgba(0,0,0,0.28);
+    }
+    .wws-card:nth-child(3) {
+      z-index: 3;
+      background: #141413;
+      color: #F5F1EB;
+      border: 1px solid rgba(255,255,255,0.05);
+      box-shadow: 0 12px 48px rgba(0,0,0,0.40);
+    }
+
+    /* Card top row: price block left, tier number right */
+    .wws-card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1.25rem;
+    }
+
+    .wws-card-eyebrow {
+      font-family: "Space Mono", monospace !important;
+      font-size: 0.9rem !important;
+      letter-spacing: 0.12em !important;
+      text-transform: uppercase !important;
+      font-weight: 700 !important;
+      margin-bottom: 0.65rem;
+    }
+    .wws-card:nth-child(1) .wws-card-eyebrow { color: #555; }
+    .wws-card:nth-child(2) .wws-card-eyebrow,
+    .wws-card:nth-child(3) .wws-card-eyebrow { color: rgba(245,241,235,0.65); }
+
+    .wws-price {
+      font-family: "Alliance No.2", "Alliance No.1", system-ui, sans-serif !important;
+      font-size: clamp(1.75rem, 2.5vw, 2.2rem) !important;
+      font-weight: 700 !important;
+      letter-spacing: -0.04em !important;
+      line-height: 1 !important;
+      margin-bottom: 0.35rem;
+    }
+    .wws-card:nth-child(1) .wws-price { color: #141413; }
+    .wws-card:nth-child(2) .wws-price,
+    .wws-card:nth-child(3) .wws-price { color: #F5F1EB; }
+
+    .wws-price-sub {
+      font-family: "Space Mono", monospace !important;
+      font-size: 0.68rem !important;
+      letter-spacing: 0.1em !important;
+      text-transform: uppercase !important;
+    }
+    .wws-card:nth-child(1) .wws-price-sub { color: #666; }
+    .wws-card:nth-child(2) .wws-price-sub,
+    .wws-card:nth-child(3) .wws-price-sub { color: rgba(245,241,235,0.58); }
+
+    .wws-card-number {
+      font-family: "Space Mono", monospace !important;
+      font-size: clamp(2.5rem, 4vw, 3.8rem) !important;
+      font-weight: 700;
+      line-height: 1;
+      user-select: none;
+      flex-shrink: 0;
+    }
+    .wws-card:nth-child(1) .wws-card-number { color: rgba(0,0,0,0.06); }
+    .wws-card:nth-child(2) .wws-card-number,
+    .wws-card:nth-child(3) .wws-card-number { color: rgba(255,255,255,0.06); }
+
+    .wws-card h3 {
+      margin: 0 !important;
+      font-size: clamp(1.05rem, 1.45vw, 1.25rem) !important;
+      line-height: 1.3 !important;
+    }
+    .wws-card:nth-child(1) h3 { color: rgba(20,20,19,0.65); }
+    .wws-card:nth-child(2) h3,
+    .wws-card:nth-child(3) h3 { color: rgba(245,241,235,0.72); }
+
+    .wws-divider {
+      height: 1px;
+      margin: 1.25rem 0;
+      flex-shrink: 0;
+    }
+    .wws-card:nth-child(1) .wws-divider { background: rgba(0,0,0,0.1); }
+    .wws-card:nth-child(2) .wws-divider,
+    .wws-card:nth-child(3) .wws-divider { background: rgba(245,241,235,0.1); }
+
+    .wws-features {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.62rem;
+      flex: 1;
+    }
+    .wws-feature {
+      display: flex;
+      align-items: baseline;
+      gap: 0.7rem;
+      font-size: 0.94rem !important;
+      line-height: 1.4;
+    }
+    .wws-feature::before {
+      content: "—";
+      font-family: "Space Mono", monospace;
+      font-size: 0.58rem;
+      flex-shrink: 0;
+      opacity: 0.28;
+    }
+    .wws-card:nth-child(1) .wws-feature { color: rgba(20,20,19,0.82); }
+    .wws-card:nth-child(2) .wws-feature,
+    .wws-card:nth-child(3) .wws-feature { color: rgba(245,241,235,0.85); }
+
+    .wws-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1.4rem;
+      flex-shrink: 0;
+      text-decoration: none;
+      font-size: 0.76rem !important;
+      letter-spacing: 0.13em !important;
+      text-transform: uppercase !important;
+      font-family: "Space Mono", monospace !important;
+      font-weight: 700 !important;
+      transition: opacity 0.2s;
+    }
+    .wws-cta:hover { opacity: 0.6; }
+    .wws-card:nth-child(1) .wws-cta { color: #141413; }
+    .wws-card:nth-child(2) .wws-cta,
+    .wws-card:nth-child(3) .wws-cta { color: #F5F1EB; }
+    .wws-cta svg { flex-shrink: 0; }
+
+    /* Featured entropy panel */
+    .entropy-featured-item {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .entropy-featured-item .FeaturedGrid-module-scss-module__W1FydW__content {
+      order: 1;
+      display: block;
+    }
+
+    .entropy-featured-item .FeaturedGrid-module-scss-module__W1FydW__mediaWrapper {
+      order: 2;
+      width: 100%;
+      max-width: 700px;
+      margin: 0;
+    }
+
+    .entropy-featured-item .FeaturedGrid-module-scss-module__W1FydW__mediaContent {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .entropy-section-heading {
+      max-width: 760px;
+      margin: 0 0 1.75rem 0;
+    }
+
+    .entropy-section-heading h2 {
+      margin: 0 !important;
+    }
+
+    .services-footer-gap {
+      padding-bottom: clamp(5rem, 10vw, 9rem);
+    }
+
+    .services-summary-tight {
+      padding-top: clamp(2.5rem, 5vw, 4.5rem) !important;
+      padding-bottom: clamp(1.5rem, 3vw, 2.5rem);
+    }
+
+    .entropy-panel {
+      position: relative;
+      width: 100%;
+      max-width: 625px;
+      height: 360px;
+      min-height: 360px;
+      border-radius: 24px;
+      overflow: hidden;
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      isolation: isolate;
+    }
+
+    .entropy-panel::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(20,20,19,0.03), transparent 25%),
+        linear-gradient(90deg, rgba(20,20,19,0.04) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(20,20,19,0.04) 1px, transparent 1px);
+      background-size: auto, 36px 36px, 36px 36px;
+      opacity: 0.18;
+      pointer-events: none;
+    }
+
+    .entropy-panel__canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .wws-pinned { height: auto; min-height: 100vh; position: static; }
+      .wws-section-outer { height: auto !important; }
+      .wws-pinned-inner { flex-direction: column; align-items: flex-start; gap: 2rem; }
+      .wws-header-col { width: 100%; }
+      .wws-cards-area { height: auto; }
+      .wws-card {
+        position: static;
+        height: auto;
+        padding: 2rem;
+        margin-bottom: 1.5rem;
+        transform: none !important;
+      }
+      .wws-card-number { display: none; }
+      .entropy-panel {
+        max-width: 340px;
+        height: 220px;
+        min-height: 220px;
+        border-radius: 20px;
+      }
+      .entropy-featured-item .FeaturedGrid-module-scss-module__W1FydW__mediaWrapper {
+        max-width: 340px;
+      }
+    }
+
+    @media (max-width: 479px) {
+      :root {
+        --page-margins: 16px;
+        --gutter: 20px;
+        --gutter-x: 20px;
+        --gutter-y: 20px;
+      }
+
+      .wws-pinned-inner {
+        padding: 0 1rem;
+        gap: 1.5rem;
+      }
+
+      .wws-card {
+        padding: 1.5rem;
+      }
+
+      .wws-feature {
+        align-items: flex-start;
+      }
+
+      .entropy-panel,
+      .entropy-featured-item .FeaturedGrid-module-scss-module__W1FydW__mediaWrapper {
+        max-width: min(100%, 340px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <main id="main-content" class="">
+    <article>
+      <section class="LandingPageSection-module-scss-module__ZSMdoa__root bg-default" data-theme="ivory">
+        <div class="page-wrapper">
+          <div class="HeroTwoColumn-module-scss-module__pM-nba__root">
+            <div class="HeroTwoColumn-module-scss-module__pM-nba__titleSubhead">
+              <h1 class="headline-1">Everything your business needs to grow</h1>
+            </div>
+            <div class="HeroTwoColumn-module-scss-module__pM-nba__bodyCtas">
+              <p class="body-1 serif">We build websites, lead automations, and operational systems for small and mid-size US businesses — so that trust, speed, and reliable follow-up turn every inquiry into revenue.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services-summary-tight LandingPageSection-module-scss-module__ZSMdoa__root bg-default LandingPageSection-module-scss-module__ZSMdoa__flushTop" data-theme="ivory">
+        <div class="page-wrapper">
+          <div class="LinkGrid-module-scss-module__wTN57W__root">
+            <div class="LinkGrid-module-scss-module__wTN57W__items">
+              <div class="LinkGrid-module-scss-module__wTN57W__item">
+                <span class="caption bold" style="display:block;margin-bottom:0.5rem;letter-spacing:0.12em;text-transform:uppercase;font-family:'Space Mono',monospace;font-size:0.68rem;">Service 01</span>
+                <h3 class="headline-6">Website Builds</h3>
+                <p class="body-3 serif">Premium, fast-loading websites that convert visitors into calls — with responsive design, SEO-ready architecture, clear call-to-action pathways, and trust signals tailored to your market.</p>
+              </div>
+              <div class="LinkGrid-module-scss-module__wTN57W__item">
+                <span class="caption bold" style="display:block;margin-bottom:0.5rem;letter-spacing:0.12em;text-transform:uppercase;font-family:'Space Mono',monospace;font-size:0.68rem;">Service 02</span>
+                <h3 class="headline-6">Lead Automations</h3>
+                <p class="body-3 serif">Every lead followed up within minutes through automated SMS and email sequences, CRM routing, review requests, and nurture flows that keep prospects moving down the funnel.</p>
+              </div>
+              <div class="LinkGrid-module-scss-module__wTN57W__item">
+                <span class="caption bold" style="display:block;margin-bottom:0.5rem;letter-spacing:0.12em;text-transform:uppercase;font-family:'Space Mono',monospace;font-size:0.68rem;">Principle</span>
+                <h3 class="headline-6">Transparent by Default</h3>
+                <p class="body-3 serif">Scope, pricing, and timelines are set before any work begins. If the right next step falls outside what we offer, we tell you directly — no upsells, no scope creep, no agenda beyond your outcome.</p>
+              </div>
+              <div class="LinkGrid-module-scss-module__wTN57W__item">
+                <span class="caption bold" style="display:block;margin-bottom:0.5rem;letter-spacing:0.12em;text-transform:uppercase;font-family:'Space Mono',monospace;font-size:0.68rem;">Principle</span>
+                <h3 class="headline-6">Ownership-First Delivery</h3>
+                <p class="body-3 serif">Domains, data, automations, and tooling are delivered in your accounts — no black-box lock-in, no hidden handoffs, and no decision-makers you cannot reach.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--
+        WHO WE SERVE — scroll-pinned stacking cards.
+        Outer section is calc(100vh + 1400px) tall: the sticky inner
+        stays locked for 1400px of scroll (700px per card transition),
+        then releases so the next section scrolls into view normally.
+      -->
+      <section
+        class="wws-section-outer LandingPageSection-module-scss-module__ZSMdoa__root bg-default LandingPageSection-module-scss-module__ZSMdoa__flushTop"
+        data-theme="ivory"
+        id="wws-section"
+        style="height: calc(100vh + 1400px);"
+      >
+        <!-- Border-top sits outside the sticky frame so it renders once -->
+        <div class="page-wrapper"><div class="LandingPageSection-module-scss-module__ZSMdoa__borderTop"></div></div>
+
+        <!-- Sticky 100vh frame — locked to top:0 while user burns through 1400px of scroll -->
+        <div class="wws-pinned" id="wws-pinned">
+          <div class="wws-pinned-inner">
+
+            <!-- Left: section label -->
+            <div class="wws-header-col">
+              <span class="caption bold" style="display:block;margin-bottom:0.6rem;letter-spacing:0.12em;text-transform:uppercase;font-family:'Space Mono',monospace;">Service 01 — Website Design & Development</span>
+              <h2 class="headline-4">Built for businesses where every lead matters.</h2>
+              <p class="body-3 serif" style="margin-top:1rem;max-width:360px;color:rgba(20,20,19,0.72);">Conversion-focused design built around how buyers decide — trust signals, clear offers, and fast load times, delivered in your accounts with no lock-in.</p>
+              <ul style="margin-top:1.25rem;max-width:360px;list-style:none;padding:0;display:flex;flex-direction:column;gap:0.45rem;">
+                <li style="display:flex;align-items:baseline;gap:0.6rem;font-size:0.84rem;line-height:1.4;color:rgba(20,20,19,0.52);font-family:'Alliance No.2','Alliance No.1',system-ui,sans-serif;"><span style="font-family:'Space Mono',monospace;font-size:0.5rem;flex-shrink:0;">—</span>Hosting, SSL, and domain fully managed for you</li>
+                <li style="display:flex;align-items:baseline;gap:0.6rem;font-size:0.84rem;line-height:1.4;color:rgba(20,20,19,0.52);font-family:'Alliance No.2','Alliance No.1',system-ui,sans-serif;"><span style="font-family:'Space Mono',monospace;font-size:0.5rem;flex-shrink:0;">—</span>Maintenance and updates included — nothing falls on you</li>
+                <li style="display:flex;align-items:baseline;gap:0.6rem;font-size:0.84rem;line-height:1.4;color:rgba(20,20,19,0.52);font-family:'Alliance No.2','Alliance No.1',system-ui,sans-serif;"><span style="font-family:'Space Mono',monospace;font-size:0.5rem;flex-shrink:0;">—</span>You own everything — domain, code, content, accounts</li>
+                <li style="display:flex;align-items:baseline;gap:0.6rem;font-size:0.84rem;line-height:1.4;color:rgba(20,20,19,0.52);font-family:'Alliance No.2','Alliance No.1',system-ui,sans-serif;"><span style="font-family:'Space Mono',monospace;font-size:0.5rem;flex-shrink:0;">—</span>Delivered in 5–10 business days, most packages</li>
+                <li style="display:flex;align-items:baseline;gap:0.6rem;font-size:0.84rem;line-height:1.4;color:rgba(20,20,19,0.52);font-family:'Alliance No.2','Alliance No.1',system-ui,sans-serif;"><span style="font-family:'Space Mono',monospace;font-size:0.5rem;flex-shrink:0;">—</span>Monthly performance report, plain language</li>
+              </ul>
+            </div>
+
+            <!-- Right: card stack (cards are absolutely positioned on top of each other) -->
+            <div class="wws-cards-area" id="wws-cards-area">
+
+              <!-- Card 1: Spark -->
+              <div class="wws-card" id="wws-card-1">
+                <div class="wws-card-top">
+                  <div>
+                    <div class="wws-card-eyebrow">Spark</div>
+                    <div class="wws-price">$1,200</div>
+                    <div class="wws-price-sub">one-time</div>
+                  </div>
+                  <div class="wws-card-number" aria-hidden="true">01</div>
+                </div>
+                <h3 class="headline-4">A polished 3-page launch site that gets you online fast and starts earning trust from day one.</h3>
+                <div class="wws-divider"></div>
+                <ul class="wws-features">
+                  <li class="wws-feature">Home, Services, and Contact — fully designed and mobile-responsive</li>
+                  <li class="wws-feature">SEO foundation — meta tags, page titles, and targeted keywords</li>
+                  <li class="wws-feature">One clear conversion path — phone, form, or booking link</li>
+                  <li class="wws-feature">Hosting, SSL, and domain configured and managed for you</li>
+                  <li class="wws-feature">Monthly uptime monitoring and minor content updates</li>
+                  <li class="wws-feature">Google Search Console setup and indexing confirmation</li>
+                </ul>
+                <a href="call.html" class="wws-cta" rel="noopener">
+                  Book a free call
+                  <svg width="14" height="14" viewBox="0 0 21 21" fill="none"><path d="M4.14585 9.87492L14.4584 9.87492L9.60419 5.04158L10.5 4.14575L16.8542 10.4999L10.5 16.8541L9.60419 15.9583L14.4584 11.1249L4.14585 11.1249L4.14585 9.87492Z" fill="currentColor"/></svg>
+                </a>
+              </div>
+
+              <!-- Card 2: Ignite -->
+              <div class="wws-card" id="wws-card-2">
+                <div class="wws-card-top">
+                  <div>
+                    <div class="wws-card-eyebrow">Ignite</div>
+                    <div class="wws-price">$2,800</div>
+                    <div class="wws-price-sub">one-time</div>
+                  </div>
+                  <div class="wws-card-number" aria-hidden="true">02</div>
+                </div>
+                <h3 class="headline-4">Up to 7 pages with online booking, conversion tracking, and deeper SEO — built to grow with you.</h3>
+                <div class="wws-divider"></div>
+                <ul class="wws-features">
+                  <li class="wws-feature">Up to 7 pages — unique layouts per section, not duplicated templates</li>
+                  <li class="wws-feature">Cal.com booking integration — appointments without back-and-forth</li>
+                  <li class="wws-feature">Google Analytics 4 with conversion events and goal configuration</li>
+                  <li class="wws-feature">Schema markup, local citations, and Google Business Profile alignment</li>
+                  <li class="wws-feature">Review request flow and social proof positioning</li>
+                  <li class="wws-feature">Dedicated landing pages for individual services or target locations</li>
+                </ul>
+                <a href="call.html" class="wws-cta" rel="noopener">
+                  Book a free call
+                  <svg width="14" height="14" viewBox="0 0 21 21" fill="none"><path d="M4.14585 9.87492L14.4584 9.87492L9.60419 5.04158L10.5 4.14575L16.8542 10.4999L10.5 16.8541L9.60419 15.9583L14.4584 11.1249L4.14585 11.1249L4.14585 9.87492Z" fill="currentColor"/></svg>
+                </a>
+              </div>
+
+              <!-- Card 3: Catalyst -->
+              <div class="wws-card" id="wws-card-3">
+                <div class="wws-card-top">
+                  <div>
+                    <div class="wws-card-eyebrow">Catalyst</div>
+                    <div class="wws-price">Custom</div>
+                    <div class="wws-price-sub">on request</div>
+                  </div>
+                  <div class="wws-card-number" aria-hidden="true">03</div>
+                </div>
+                <h3 class="headline-4">A fully custom platform built as your operational hub — designed to run and scale the business.</h3>
+                <div class="wws-divider"></div>
+                <ul class="wws-features">
+                  <li class="wws-feature">Custom design system — built around your brand, no shared templates</li>
+                  <li class="wws-feature">Ecommerce, client portals, or membership areas</li>
+                  <li class="wws-feature">CRM, calendar, and job-board integrations</li>
+                  <li class="wws-feature">Lead routing, tagging, and automated follow-up workflows</li>
+                  <li class="wws-feature">API connections to third-party platforms and internal tools</li>
+                  <li class="wws-feature">Dedicated support, ongoing refinement, and quarterly strategy reviews</li>
+                </ul>
+                <a href="call.html" class="wws-cta" rel="noopener">
+                  Book a free call
+                  <svg width="14" height="14" viewBox="0 0 21 21" fill="none"><path d="M4.14585 9.87492L14.4584 9.87492L9.60419 5.04158L10.5 4.14575L16.8542 10.4999L10.5 16.8541L9.60419 15.9583L14.4584 11.1249L4.14585 11.1249L4.14585 9.87492Z" fill="currentColor"/></svg>
+                </a>
+              </div>
+
+            </div><!-- /wws-cards-area -->
+          </div><!-- /wws-pinned-inner -->
+        </div><!-- /wws-pinned -->
+
+        <script>
+        (function () {
+          var section = document.getElementById('wws-section');
+          var cards   = document.querySelectorAll('#wws-cards-area .wws-card');
+          if (!section || cards.length < 3) return;
+
+          // How far below the fold cards start (clipped by .wws-pinned overflow:hidden)
+          var OFF_Y = 680;
+
+          // Deck offsets when stacked: bottom card is pushed down, top card is flush
+          var DELTA_Y = 18;      // px per layer
+          var DELTA_S = 0.055;   // scale reduction per layer
+
+          function lerp(a, b, t) { return a + (b - a) * t; }
+          function easeOut(t)    { return 1 - Math.pow(1 - t, 2.8); }
+
+          function setCard(el, y, s) {
+            el.style.transform = 'translateY(' + y.toFixed(2) + 'px) scale(' + s.toFixed(4) + ')';
+          }
+
+          function update() {
+            var rect   = section.getBoundingClientRect();
+            var budget = section.offsetHeight - window.innerHeight;
+            if (budget <= 0) return;
+
+            // progress 0→1 through the entire scroll budget
+            var progress = Math.max(0, Math.min(1, -rect.top / budget));
+
+            // p1: card 2 slides in  (progress 0 → 0.5)
+            var p1 = easeOut(Math.max(0, Math.min(1, progress * 2)));
+            // p2: card 3 slides in  (progress 0.5 → 1)
+            var p2 = easeOut(Math.max(0, Math.min(1, (progress - 0.5) * 2)));
+
+            /*
+             * At rest (progress=0):   card 1 is the sole visible card  (top, full size)
+             * At mid  (progress=0.5): card 2 arrives as new top card;   card 1 → middle
+             * At end  (progress=1):   card 3 arrives as new top card;   card 2 → middle, card 1 → bottom
+             *
+             * Stacked deck positions (top-to-bottom):
+             *   top    →  Y=0,           scale=1.0
+             *   middle →  Y=+DELTA_Y,    scale=1−DELTA_S
+             *   bottom →  Y=+DELTA_Y*2,  scale=1−DELTA_S*2
+             */
+
+            // Card 1: top → middle (p1) → bottom (p2)
+            var c1y = lerp(lerp(0, DELTA_Y,     p1), DELTA_Y * 2, p2);
+            var c1s = lerp(lerp(1, 1 - DELTA_S, p1), 1 - DELTA_S * 2, p2);
+
+            // Card 2: off-screen → top (p1) → middle (p2)
+            var c2y = lerp(lerp(OFF_Y, 0,       p1), DELTA_Y,  p2);
+            var c2s = lerp(lerp(1,     1,        p1), 1 - DELTA_S, p2);
+
+            // Card 3: off-screen → top (p2)
+            var c3y = lerp(OFF_Y, 0, p2);
+            var c3s = 1;
+
+            setCard(cards[0], c1y, c1s);
+            setCard(cards[1], c2y, c2s);
+            setCard(cards[2], c3y, c3s);
+          }
+
+          // Run once immediately to set initial positions (cards 2 & 3 off-screen)
+          update();
+          window.addEventListener('scroll', update, { passive: true });
+          window.addEventListener('resize', update);
+        })();
+        </script>
+      </section>
+
+      <section class="services-footer-gap LandingPageSection-module-scss-module__ZSMdoa__root bg-default LandingPageSection-module-scss-module__ZSMdoa__flushTop" data-theme="ivory">
+        <div class="page-wrapper"><div class="LandingPageSection-module-scss-module__ZSMdoa__borderTop"></div></div>
+        <div class="page-wrapper">
+          <div class="entropy-section-heading">
+            <span class="caption bold" style="display:block;margin-bottom:0.6rem;letter-spacing:0.12em;text-transform:uppercase;font-family:'Space Mono',monospace;">Service 02 — Automation & Workflows</span>
+            <h2 class="headline-4">Automation that works while you sleep.</h2>
+          </div>
+          <div class="FeaturedGrid-module-scss-module__W1FydW__root">
+            <div class="FeaturedGrid-module-scss-module__W1FydW__featuredItem entropy-featured-item">
+              <div class="FeaturedGrid-module-scss-module__W1FydW__content">
+                <div class="FeaturedGrid-module-scss-module__W1FydW__featuredItemContent">
+                  <div class="FeaturedGrid-module-scss-module__W1FydW__gridItem FeaturedGrid-module-scss-module__W1FydW__featured">
+                    <div class="FeaturedGrid-module-scss-module__W1FydW__meta">
+                      <div style="display:flex;align-items:baseline;gap:0.5rem;margin-bottom:0.75rem;">
+                        <span style="font-family:'Alliance No.2','Alliance No.1',system-ui,sans-serif;font-size:clamp(1.5rem,2.2vw,2rem);font-weight:700;letter-spacing:-0.04em;line-height:1;color:#141413;">Custom priced</span>
+                        <span style="font-family:'Space Mono',monospace;font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;color:#666;">/ scoped to your stack</span>
+                      </div>
+                    </div>
+                    <p class="body-3 serif FeaturedGrid-module-scss-module__W1FydW__body" style="margin-bottom:1rem;">We connect your tools — CRM, calendar, forms, and communication channels — into workflows that capture leads, trigger follow-ups, and keep your pipeline moving without manual intervention at every step.</p>
+                    <a href="call.html" class="wws-cta" style="color:#141413;" rel="noopener">
+                      Book a free call
+                      <svg width="14" height="14" viewBox="0 0 21 21" fill="none"><path d="M4.14585 9.87492L14.4584 9.87492L9.60419 5.04158L10.5 4.14575L16.8542 10.4999L10.5 16.8541L9.60419 15.9583L14.4584 11.1249L4.14585 11.1249L4.14585 9.87492Z" fill="currentColor"/></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <figure class="FeaturedGrid-module-scss-module__W1FydW__mediaWrapper">
+                <div class="FeaturedGrid-module-scss-module__W1FydW__mediaContent">
+                  <div class="entropy-panel" data-entropy-panel aria-hidden="true">
+                    <canvas class="entropy-panel__canvas"></canvas>
+                  </div>
+                </div>
+              </figure>
+            </div>
+            <div class="FeaturedGrid-module-scss-module__W1FydW__sideItems">
+              <div class="FeaturedGrid-module-scss-module__W1FydW__sideLink FeaturedGrid-module-scss-module__W1FydW__gridItem"><div class="FeaturedGrid-module-scss-module__W1FydW__meta"><span class="caption bold">Lead intake</span></div><h4 class="headline-6 FeaturedGrid-module-scss-module__W1FydW__title">Capture & routing</h4><p class="body-3 serif FeaturedGrid-module-scss-module__W1FydW__body">Every inquiry from your website, ads, or social is captured, tagged, and routed to the right place — so no lead slips through and every hot moment gets a response.</p></div>
+              <div class="FeaturedGrid-module-scss-module__W1FydW__sideLink FeaturedGrid-module-scss-module__W1FydW__gridItem"><div class="FeaturedGrid-module-scss-module__W1FydW__meta"><span class="caption bold">Scheduling</span></div><h4 class="headline-6 FeaturedGrid-module-scss-module__W1FydW__title">Booking without friction</h4><p class="body-3 serif FeaturedGrid-module-scss-module__W1FydW__body">Cal.com connected to your CRM and notifications puts qualified appointments on your calendar — no back-and-forth, no manual confirmations, no dropped handoffs.</p></div>
+              <div class="FeaturedGrid-module-scss-module__W1FydW__sideLink FeaturedGrid-module-scss-module__W1FydW__gridItem"><div class="FeaturedGrid-module-scss-module__W1FydW__meta"><span class="caption bold">Nurture</span></div><h4 class="headline-6 FeaturedGrid-module-scss-module__W1FydW__title">Stay top of mind</h4><p class="body-3 serif FeaturedGrid-module-scss-module__W1FydW__body">Email and SMS sequences through HubSpot or GoHighLevel keep leads warm between touchpoints — so when they're ready to move forward, you're the first call they make.</p></div>
+              <div class="FeaturedGrid-module-scss-module__W1FydW__sideLink FeaturedGrid-module-scss-module__W1FydW__gridItem"><div class="FeaturedGrid-module-scss-module__W1FydW__meta"><span class="caption bold">Visibility</span></div><h4 class="headline-6 FeaturedGrid-module-scss-module__W1FydW__title">One clear picture</h4><p class="body-3 serif FeaturedGrid-module-scss-module__W1FydW__body">Connected data flows pull numbers from every tool into a single view — so you always know what's converting, what's stalling, and where to focus next.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </article>
+    <script>
+      (function () {
+        var panels = document.querySelectorAll('[data-entropy-panel]');
+        if (!panels.length) return;
+
+        var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+        panels.forEach(function (panel) {
+          var canvas = panel.querySelector('canvas');
+          if (!canvas) return;
+
+          var ctx = canvas.getContext('2d');
+          if (!ctx) return;
+
+          var particles = [];
+          var resizeObserver = null;
+          var animationId = 0;
+          var tick = 0;
+          var panelWidth = 0;
+          var panelHeight = 0;
+
+          function getSplitX() {
+            return panelWidth / 2;
+          }
+
+          function getBaseSize() {
+            return Math.min(panelWidth, panelHeight);
+          }
+
+          function Particle(x, y, ordered) {
+            this.x = x;
+            this.y = y;
+            this.originalX = x;
+            this.originalY = y;
+            this.size = 2.2;
+            this.ordered = ordered;
+            this.velocity = {
+              x: (Math.random() - 0.5) * 1.8,
+              y: (Math.random() - 0.5) * 1.8
+            };
+            this.influence = 0;
+            this.neighbors = [];
+          }
+
+          Particle.prototype.update = function () {
+            if (this.ordered) {
+              var dx = this.originalX - this.x;
+              var dy = this.originalY - this.y;
+              var chaosX = 0;
+              var chaosY = 0;
+              var maxInfluence = 0;
+
+              this.neighbors.forEach(function (neighbor) {
+                if (neighbor.ordered) return;
+
+                var distance = Math.hypot(this.x - neighbor.x, this.y - neighbor.y);
+                var strength = Math.max(0, 1 - distance / (getBaseSize() * 0.22));
+
+                chaosX += neighbor.velocity.x * strength;
+                chaosY += neighbor.velocity.y * strength;
+                maxInfluence = Math.max(maxInfluence, strength);
+              }, this);
+
+              this.influence = Math.max(this.influence * 0.98, maxInfluence);
+              this.x += dx * 0.052 * (1 - this.influence) + chaosX * this.influence;
+              this.y += dy * 0.052 * (1 - this.influence) + chaosY * this.influence;
+            } else {
+              this.velocity.x += (Math.random() - 0.5) * 0.26;
+              this.velocity.y += (Math.random() - 0.5) * 0.26;
+              this.velocity.x *= 0.96;
+              this.velocity.y *= 0.96;
+              this.x += this.velocity.x;
+              this.y += this.velocity.y;
+
+              var splitX = getSplitX();
+              if (this.x < 0 || this.x > splitX) this.velocity.x *= -1;
+              if (this.y < 0 || this.y > panelHeight) this.velocity.y *= -1;
+
+              this.x = Math.max(0, Math.min(splitX, this.x));
+              this.y = Math.max(0, Math.min(panelHeight, this.y));
+            }
+          };
+
+          Particle.prototype.draw = function () {
+            var alpha = this.ordered ? 0.78 - this.influence * 0.38 : 0.8;
+            ctx.fillStyle = 'rgba(20, 20, 19, ' + alpha + ')';
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+            ctx.fill();
+          };
+
+          function updateNeighbors() {
+            var neighborDistance = getBaseSize() * 0.22;
+
+            particles.forEach(function (particle) {
+              particle.neighbors = particles.filter(function (other) {
+                if (other === particle) return false;
+                return Math.hypot(particle.x - other.x, particle.y - other.y) < neighborDistance;
+              });
+            });
+          }
+
+          function buildParticles() {
+            particles = [];
+
+            var columns = panelWidth > 640 ? 30 : panelWidth > 520 ? 26 : 22;
+            var rows = Math.max(10, Math.round(columns * (panelHeight / panelWidth)));
+            var spacingX = panelWidth / columns;
+            var spacingY = panelHeight / rows;
+
+            for (var i = 0; i < columns; i++) {
+              for (var j = 0; j < rows; j++) {
+                var x = spacingX * i + spacingX / 2;
+                var y = spacingY * j + spacingY / 2;
+                particles.push(new Particle(x, y, x >= getSplitX()));
+              }
+            }
+
+            updateNeighbors();
+          }
+
+          function drawStaticFrame() {
+            ctx.clearRect(0, 0, panelWidth, panelHeight);
+            particles.forEach(function (particle) {
+              particle.draw();
+            });
+          }
+
+          function animate() {
+            ctx.clearRect(0, 0, panelWidth, panelHeight);
+
+            if (tick % 24 === 0) updateNeighbors();
+
+            particles.forEach(function (particle) {
+              particle.update();
+              particle.draw();
+
+              particle.neighbors.forEach(function (neighbor) {
+                var distance = Math.hypot(particle.x - neighbor.x, particle.y - neighbor.y);
+                var maxDistance = getBaseSize() * 0.11;
+
+                if (distance < maxDistance) {
+                  var alpha = 0.22 * (1 - distance / maxDistance);
+                  ctx.strokeStyle = 'rgba(20, 20, 19, ' + alpha + ')';
+                  ctx.beginPath();
+                  ctx.moveTo(particle.x, particle.y);
+                  ctx.lineTo(neighbor.x, neighbor.y);
+                  ctx.stroke();
+                }
+              });
+            });
+
+            tick += 1;
+            animationId = requestAnimationFrame(animate);
+          }
+
+          function resize() {
+            panelWidth = Math.max(280, Math.floor(panel.clientWidth));
+            panelHeight = Math.max(220, Math.floor(panel.clientHeight || 360));
+
+            var dpr = Math.min(window.devicePixelRatio || 1, 2);
+            canvas.width = Math.floor(panelWidth * dpr);
+            canvas.height = Math.floor(panelHeight * dpr);
+            canvas.style.width = panelWidth + 'px';
+            canvas.style.height = panelHeight + 'px';
+            ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+            ctx.lineWidth = 0.95;
+
+            buildParticles();
+
+            if (prefersReducedMotion.matches) {
+              drawStaticFrame();
+            }
+          }
+
+          function start() {
+            cancelAnimationFrame(animationId);
+            if (!prefersReducedMotion.matches) {
+              animate();
+            }
+          }
+
+          resize();
+          start();
+
+          if (typeof ResizeObserver !== 'undefined') {
+            resizeObserver = new ResizeObserver(function () {
+              resize();
+              start();
+            });
+            resizeObserver.observe(panel);
+          } else {
+            window.addEventListener('resize', resize);
+          }
+
+          var motionHandler = function () {
+            resize();
+            start();
+          };
+
+          if (typeof prefersReducedMotion.addEventListener === 'function') {
+            prefersReducedMotion.addEventListener('change', motionHandler);
+          } else if (typeof prefersReducedMotion.addListener === 'function') {
+            prefersReducedMotion.addListener(motionHandler);
+          }
+
+          window.addEventListener('pagehide', function () {
+            cancelAnimationFrame(animationId);
+            if (resizeObserver) resizeObserver.disconnect();
+          }, { once: true });
+        });
+      })();
+    </script>
+  </main>
+</body>
+</html>

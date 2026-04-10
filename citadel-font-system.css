@@ -1,0 +1,90 @@
+@import url("assets/vendor/google-fonts/manrope-space-mono.css");
+
+@font-face {
+  font-family: "Alliance No.1";
+  src: url("fonts/Alliance-No1-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alliance No.2";
+  src: url("fonts/Alliance-No2-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-sans: "Manrope", system-ui, -apple-system, sans-serif;
+  --font-display: "Alliance No.2", "Alliance No.1", system-ui, -apple-system, sans-serif;
+  --font-mono: "Space Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-sans) !important;
+  font-size: 17px;
+  line-height: 1.6;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.u-display-xl,
+.u-display-s,
+.u-display-m,
+.u-display-xs,
+.g_heading,
+footer svg text {
+  font-family: var(--font-display) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.05em;
+}
+
+.u-font-display-sans,
+.eyebrow,
+.section-label,
+.legal-eyebrow,
+.step-label,
+.badge,
+.booking-progress__dot,
+.site-nav__badge,
+.site-nav__kicker {
+  font-family: var(--font-mono) !important;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+p,
+label,
+li,
+input,
+textarea,
+select,
+button,
+.u-paragraph-l,
+.u-paragraph-m,
+.u-paragraph-s,
+.u-paragraph-xs,
+.u-detail-m,
+.u-detail-s,
+.u-detail-xs {
+  font-family: var(--font-sans) !important;
+}
+
+code,
+pre,
+.u-font-mono {
+  font-family: var(--font-mono) !important;
+}

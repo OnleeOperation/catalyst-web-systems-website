@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(files/manrope-300.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(files/manrope-400.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(files/manrope-500.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(files/manrope-600.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(files/manrope-700.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Space Mono';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(files/space-mono-italic-400.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(files/space-mono-400.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(files/space-mono-700.ttf) format('truetype');
+}

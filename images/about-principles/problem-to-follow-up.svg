@@ -1,0 +1,35 @@
+<svg width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .stroke { stroke: #20383b; stroke-width: 20; stroke-linecap: round; stroke-linejoin: round; }
+      .panel { fill: #f7f3eb; fill-opacity: 0.94; stroke: #20383b; stroke-width: 20; stroke-linecap: round; stroke-linejoin: round; }
+      .soft { fill: #e6ddd0; }
+      .soft-stroke { stroke: #708489; stroke-width: 18; stroke-linecap: round; stroke-linejoin: round; }
+      .accent { fill: #b58a58; }
+      .accent-stroke { stroke: #b58a58; stroke-width: 20; stroke-linecap: round; stroke-linejoin: round; }
+      .sage { fill: #72877d; }
+    </style>
+  </defs>
+  <rect x="118" y="176" width="372" height="252" rx="42" class="panel"/>
+  <circle cx="176" cy="230" r="10" class="accent"/>
+  <circle cx="214" cy="230" r="10" class="sage"/>
+  <circle cx="252" cy="230" r="10" fill="#c8bbab"/>
+  <rect x="172" y="276" width="140" height="92" rx="22" class="soft"/>
+  <path d="M346 290H426" class="stroke"/>
+  <path d="M346 340H446" class="stroke"/>
+  <path d="M346 390H408" class="soft-stroke"/>
+  <path d="M212 324H272" class="stroke"/>
+  <path d="M234 302V346" class="stroke"/>
+  <path d="M470 354C558 374 620 430 664 516" class="accent-stroke"/>
+  <path d="M636 502L676 522L654 560" class="accent-stroke"/>
+  <circle cx="530" cy="396" r="14" class="sage"/>
+  <circle cx="586" cy="438" r="12" fill="#c8bbab"/>
+  <rect x="566" y="436" width="238" height="332" rx="44" class="panel"/>
+  <path d="M648 480H726" class="stroke"/>
+  <rect x="618" y="536" width="132" height="36" rx="18" class="soft"/>
+  <path d="M618 620H748" class="stroke"/>
+  <path d="M618 674H712" class="soft-stroke"/>
+  <path d="M634 708L670 742L736 650" class="stroke"/>
+  <path d="M220 560C220 508 262 466 314 466C366 466 408 508 408 560C408 612 366 654 314 654" class="soft-stroke"/>
+  <path d="M314 516V566L354 590" class="stroke"/>
+</svg>

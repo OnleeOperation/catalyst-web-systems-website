@@ -1,0 +1,28 @@
+<svg width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .stroke { stroke: #20383b; stroke-width: 20; stroke-linecap: round; stroke-linejoin: round; }
+      .panel { fill: #f7f3eb; fill-opacity: 0.94; stroke: #20383b; stroke-width: 20; stroke-linecap: round; stroke-linejoin: round; }
+      .soft { fill: #e6ddd0; }
+      .soft-stroke { stroke: #708489; stroke-width: 18; stroke-linecap: round; stroke-linejoin: round; }
+      .accent { fill: #b58a58; }
+      .sage { fill: #72877d; }
+    </style>
+  </defs>
+  <path d="M164 348H392L446 404H836V694C836 730 806 760 770 760H230C194 760 164 730 164 694V348Z" class="panel"/>
+  <path d="M232 468H770" class="stroke"/>
+  <rect x="248" y="528" width="214" height="144" rx="30" class="soft"/>
+  <path d="M292 580H410" class="stroke"/>
+  <path d="M292 628H382" class="soft-stroke"/>
+  <rect x="552" y="206" width="240" height="128" rx="34" class="panel"/>
+  <path d="M608 270H734" class="stroke"/>
+  <path d="M584 242L606 264L646 220" class="stroke"/>
+  <circle cx="650" cy="520" r="108" class="panel"/>
+  <circle cx="650" cy="520" r="36" class="accent"/>
+  <path d="M686 520H760" class="stroke"/>
+  <path d="M760 520C788 520 810 542 810 570C810 598 788 620 760 620C732 620 710 598 710 570" class="stroke"/>
+  <path d="M730 570H810" class="stroke"/>
+  <path d="M560 286C594 246 636 226 684 226C732 226 774 246 808 286" class="soft-stroke"/>
+  <circle cx="560" cy="286" r="16" class="sage"/>
+  <circle cx="808" cy="286" r="16" class="accent"/>
+</svg>

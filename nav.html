@@ -1,0 +1,207 @@
+<style>
+  @import url("citadel-font-system.css");
+  :root {
+    --font-sans: 'Manrope', sans-serif;
+    --site--width: 89.5rem;
+    --site--column-count: 12;
+    --site--gutter: 2rem;
+    --site--margin: clamp(2rem, 1.0816326530612246rem + 3.9183673469387754vw, 5rem);
+    --site--max-width: min(var(--site--width), 100vw);
+    --container--main: calc(var(--site--max-width) - var(--site--margin) * 2);
+    --container--full: calc(100% - 4rem);
+    --container--small: calc(var(--column-width--plus-gutter) * (var(--site--column-count) - 4) - var(--site--gutter));
+    --site--gutter-total: calc(var(--site--gutter) * (var(--site--column-count) - 1));
+    --column-width--1: calc((var(--container--main) - var(--site--gutter-total)) / var(--site--column-count));
+    --column-width--plus-gutter: calc(var(--column-width--1) + var(--site--gutter));
+    --column-width--2: calc(var(--column-width--plus-gutter) * 2 - var(--site--gutter));
+    --column-width--3: calc(var(--column-width--plus-gutter) * 3 - var(--site--gutter));
+    --column-width--4: calc(var(--column-width--plus-gutter) * 4 - var(--site--gutter));
+    --column-width--5: calc(var(--column-width--plus-gutter) * 5 - var(--site--gutter));
+    --column-width--6: calc(var(--column-width--plus-gutter) * 6 - var(--site--gutter));
+    --column-width--7: calc(var(--column-width--plus-gutter) * 7 - var(--site--gutter));
+    --column-width--8: calc(var(--column-width--plus-gutter) * 8 - var(--site--gutter));
+    --column-width--9: calc(var(--column-width--plus-gutter) * 9 - var(--site--gutter));
+    --column-width--10: calc(var(--column-width--plus-gutter) * 10 - var(--site--gutter));
+    --column-width--11: calc(var(--column-width--plus-gutter) * 11 - var(--site--gutter));
+    --column-width--12: calc(var(--column-width--plus-gutter) * 12 - var(--site--gutter));
+    --column-margin--1: calc(var(--column-width--plus-gutter) * 1);
+    --column-margin--2: calc(var(--column-width--plus-gutter) * 2);
+    --column-margin--3: calc(var(--column-width--plus-gutter) * 3);
+    --column-margin--4: calc(var(--column-width--plus-gutter) * 4);
+    --column-margin--5: calc(var(--column-width--plus-gutter) * 5);
+    --column-margin--6: calc(var(--column-width--plus-gutter) * 6);
+    --column-margin--7: calc(var(--column-width--plus-gutter) * 7);
+    --column-margin--8: calc(var(--column-width--plus-gutter) * 8);
+    --column-margin--9: calc(var(--column-width--plus-gutter) * 9);
+    --column-margin--10: calc(var(--column-width--plus-gutter) * 10);
+    --column-margin--11: calc(var(--column-width--plus-gutter) * 11);
+    --column-margin--12: calc(var(--column-width--plus-gutter) * 12);
+    --breakout-start: [full-start] minmax(0, 1fr) [content-start];
+    --breakout-end: [content-end] minmax(0, 1fr) [full-end];
+    --grid-breakout-single: var(--breakout-start) minmax(0, var(--container--main)) var(--breakout-end);
+    --grid-breakout: var(--breakout-start) repeat(var(--site--column-count), minmax(0, var(--column-width--1))) var(--breakout-end);
+    --grid-main: repeat(var(--site--column-count), minmax(0, 1fr));
+    --grid-1: repeat(1, minmax(0, 1fr));
+    --grid-2: repeat(2, minmax(0, 1fr));
+    --grid-3: repeat(3, minmax(0, 1fr));
+    --grid-4: repeat(4, minmax(0, 1fr));
+    --grid-5: repeat(5, minmax(0, 1fr));
+    --grid-6: repeat(6, minmax(0, 1fr));
+    --grid-7: repeat(7, minmax(0, 1fr));
+    --grid-8: repeat(8, minmax(0, 1fr));
+    --grid-9: repeat(9, minmax(0, 1fr));
+    --grid-10: repeat(10, minmax(0, 1fr));
+    --grid-11: repeat(11, minmax(0, 1fr));
+    --grid-12: repeat(12, minmax(0, 1fr));
+  }
+  .site-nav {
+    position: sticky !important; top: 0 !important; z-index: 200 !important;
+    background: #0a0a0a !important;
+    border-bottom: 1px solid rgba(240,239,233,0.08) !important;
+    font-family: var(--font-sans) !important;
+    -webkit-font-smoothing: antialiased;
+    margin: 0 !important; padding: 0 !important;
+  }
+  .site-nav__inner {
+    display: flex !important; align-items: center !important; gap: 1.5rem !important;
+    height: 4.25rem !important;
+    width: calc(100% - (var(--site--margin) * 2)) !important;
+    max-width: var(--container--main) !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    justify-content: space-between !important;
+  }
+  .site-nav__logo {
+    font-family: var(--font-sans) !important;
+    font-size: 1.1rem !important; font-weight: 700 !important; letter-spacing: 1.5px !important;
+    color: #f0efe9 !important; text-decoration: none !important;
+    flex-shrink: 0 !important; margin: 0 !important; padding: 0 !important;
+  }
+  .site-nav__links {
+    display: flex !important; align-items: center !important; gap: clamp(1.4rem, 2vw, 2rem) !important;
+  }
+  .site-nav__link {
+    font-size: 0.9375rem !important; color: rgba(240,239,233,0.65) !important;
+    text-decoration: none !important; transition: color 0.15s !important;
+    font-weight: 400 !important; font-family: var(--font-sans) !important;
+    background: none !important; border: none !important; padding: 0 !important;
+    margin: 0 !important; line-height: 1.4 !important;
+    outline: none !important; box-shadow: none !important; letter-spacing: normal !important;
+  }
+  .site-nav__link:hover,
+  .site-nav__link[aria-current="page"] { color: #f0efe9 !important; }
+  .site-nav__link:focus { outline: none !important; box-shadow: none !important; }
+  .site-nav__primary {
+    display: flex !important;
+    align-items: center !important;
+    gap: clamp(1.4rem, 2vw, 2rem) !important;
+    margin-left: auto !important; margin-top: 0 !important; margin-bottom: 0 !important;
+    padding: 0 !important;
+  }
+  .site-nav__cta {
+    flex-shrink: 0;
+    display: inline-block !important;
+    width: auto !important; height: auto !important;
+    min-width: 0 !important; min-height: 0 !important;
+    padding: 0.5rem 1.25rem !important;
+    line-height: 1.4 !important; box-sizing: border-box !important;
+    background: #f0efe9 !important; color: #0a0a0a !important;
+    border: 1.5px solid #f0efe9 !important; border-radius: 0.5rem !important;
+    outline: none !important; box-shadow: none !important;
+    font-size: 0.875rem !important; font-weight: 600 !important;
+    text-decoration: none !important; font-family: var(--font-sans) !important;
+    letter-spacing: normal !important; transition: opacity 0.15s;
+  }
+  .site-nav__cta:hover { opacity: 0.85 !important; }
+  .site-nav__cta:focus { outline: none !important; box-shadow: none !important; }
+  .site-nav__hamburger {
+    display: none; flex-direction: column; justify-content: center; gap: 5px;
+    background: none !important; border: none !important; cursor: pointer; padding: 0.5rem;
+    margin-left: auto;
+  }
+  .site-nav__hamburger span {
+    display: block; width: 22px; height: 1.5px;
+    background: #f0efe9 !important; border-radius: 2px;
+    transition: transform 0.25s, opacity 0.25s;
+  }
+  .site-nav__hamburger[aria-expanded="true"] span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+  .site-nav__hamburger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+  .site-nav__hamburger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+  .site-nav__mobile-menu {
+    display: flex; flex-direction: column;
+    background: #0a0a0a !important;
+    border-top: 1px solid rgba(240,239,233,0.08);
+    padding: 1rem var(--site--margin) 1.5rem;
+    gap: 0;
+  }
+  .site-nav__mobile-menu[hidden] { display: none; }
+  .site-nav__mobile-link {
+    padding: 0.75rem 0 !important;
+    border-bottom: 1px solid rgba(240,239,233,0.08) !important;
+    font-size: 1rem !important; color: rgba(240,239,233,0.7) !important;
+    text-decoration: none !important; font-family: var(--font-sans) !important;
+    font-weight: 400 !important; background: none !important;
+  }
+  .site-nav__mobile-link[aria-current="page"] { color: #f0efe9 !important; }
+  .site-nav__mobile-cta {
+    margin-top: 1.25rem; align-self: flex-start;
+    padding: 0.625rem 1.25rem !important;
+    background: #f0efe9 !important; color: #0a0a0a !important;
+    border-radius: 0.5rem !important; font-size: 0.9375rem !important; font-weight: 600 !important;
+    text-decoration: none !important; font-family: var(--font-sans) !important;
+  }
+  @media (max-width: 900px) {
+    .site-nav__inner {
+      gap: 1rem !important;
+      height: auto !important;
+      min-height: 4rem !important;
+      padding: 0.75rem 0 !important;
+    }
+    .site-nav__logo {
+      font-size: 1rem !important;
+      letter-spacing: 0.12em !important;
+    }
+    .site-nav__primary { display: none !important; }
+    .site-nav__hamburger { display: flex !important; }
+    .site-nav__mobile-menu {
+      padding: 1rem var(--site--margin) 1.25rem !important;
+      max-height: calc(100svh - 4rem);
+      overflow-y: auto;
+    }
+  }
+  @media (max-width: 479px) {
+    .site-nav__inner {
+      width: calc(100% - 2rem) !important;
+    }
+    .site-nav__mobile-menu {
+      padding-inline: 1rem !important;
+    }
+    .site-nav__mobile-cta {
+      width: 100%;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  @media (min-width: 901px) {
+    .site-nav__mobile-menu { display: none !important; }
+  }
+</style>
+<nav class="site-nav" aria-label="Site navigation">
+  <div class="site-nav__inner">
+    <a href="index.html" class="site-nav__logo" aria-label="Catalyst Web Systems home" data-windmill-prevent="all">CATALYST</a>
+    <div class="site-nav__primary">
+      <a href="services.html" class="site-nav__link" data-windmill-prevent="all">Services</a>
+      <a href="about.html" class="site-nav__link" data-windmill-prevent="all">About</a>
+      <a href="call.html" class="site-nav__cta" data-windmill-prevent="all">Get a Free Call</a>
+    </div>
+    <button class="site-nav__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav__mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="site-nav__mobile-menu" id="site-nav__mobile-menu" hidden>
+    <a href="services.html" class="site-nav__mobile-link" data-windmill-prevent="all">Services</a>
+    <a href="about.html" class="site-nav__mobile-link" data-windmill-prevent="all">About</a>
+    <a href="call.html" class="site-nav__mobile-cta" data-windmill-prevent="all">Get a Free Call</a>
+  </div>
+</nav>
