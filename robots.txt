@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /nav.html
+Disallow: /footer.html
+Disallow: /test-results/
+
+Sitemap: https://www.catalystwebsystems.com/sitemap.xml
