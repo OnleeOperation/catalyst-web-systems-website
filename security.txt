@@ -1,0 +1,4 @@
+Contact: mailto:hello@catalystwebsystems.com
+Canonical: https://www.catalystwebsystems.com/.well-known/security.txt
+Preferred-Languages: en
+Expires: 2027-04-27T00:00:00Z
